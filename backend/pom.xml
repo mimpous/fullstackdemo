@@ -51,10 +51,19 @@
 			</exclusions>
 		</dependency>
 		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
-		</dependency>		
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -71,7 +80,7 @@
 						<goals>
 							<goal>prepare-agent</goal>
 						</goals>
-					</execution> 
+					</execution>
 					<execution>
 						<id>report</id>
 						<phase>test</phase>
@@ -79,7 +88,7 @@
 							<goal>report</goal>
 						</goals>
 					</execution>
-				</executions> 
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
